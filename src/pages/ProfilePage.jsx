@@ -1,9 +1,7 @@
 import React from 'react'
 
-export const ProfilePage = () => {
-  return (
-    // prettier-ignore : 이거 밑으로 정렬 안 해줌
-    <Hello></Hello>
-  )
+const ProfilePage = () => {
+  return <h1 className="text-center mt-5">프로필 페이지입니다.</h1>
 }
+
 export default ProfilePage
