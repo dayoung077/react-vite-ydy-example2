@@ -9,7 +9,7 @@ const Grade2 = () => {
   })
 
   const onChange = (event) => {
-    const { name, value } = event.target //객체구조분할
+    const { name, value } = event.target // 객체 구조 분할
     // const name = event.target.name;
     // const value = event.target.value;
 
