@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript in Body</h2>
+
+    <script>
+      const friends = [
+        {
+          name: '양주진',
+          age: 32,
+          job: '코인러',
+          married: false,
+        },
+
+        {
+          name: '오영제',
+          age: 32,
+          job: '랩퍼',
+          married: false,
+        },
+
+        {
+          name: '서준형',
+          age: 32,
+          job: '2년차 유부남',
+          married: true,
+        },
+      ]
+
+      let result2 = friends.filter((frend) => {
+        return frend.married == false
+      })
+
+      result2.map((user) => {
+        document.write(user.name + '<br>')
+        document.write(user.age + '<br>')
+      })
+    </script>
+  </body>
+</html>

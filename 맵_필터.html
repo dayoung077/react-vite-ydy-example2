@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo"></p>
+    <script>
+      const nums = [1, 2, 3, 4, 5]
+      // filter 조건에 맞는 또다른 배열을 만들어 내는 함수
+      let result = nums.filter((num, index) => {
+        // document.write(index + '<br>')
+        // document.write(num + '<br>')
+        return num % 2 == 1
+      })
+
+      document.write(result)
+    </script>
+
+    <hr />
+
+    <script>
+      let users = [
+        {
+          id: 1,
+          username: '홍길동',
+          email: 'abce@gmail.com',
+        },
+
+        {
+          id: 2,
+          username: '홍길동',
+          email: 'abce@daum.com',
+        },
+
+        {
+          id: 3,
+          username: '바둑이',
+          email: 'abce@naver.com',
+        },
+      ]
+
+      let result2 = users.filter((user) => {
+        return user.username == '홍길동'
+      })
+
+      result2.map((user) => {
+        document.write(user.id + '<br>')
+        document.write(user.username + '<br>')
+      })
+
+      // document.write(result2[0].username + '<br>')
+
+      // users.map(function (user, index) {
+      //   document.write(user.id + '<br>')
+      //   document.write(user.username + '<br>')
+      //   document.write(user.email + '<br>')
+      //   document.write('인덱스:' + index + '<br>')
+      //   document.write(users[index].id + '<br>')
+      //   document.write(users[index].username + '<br>')
+      // })
+    </script>
+  </body>
+</html>

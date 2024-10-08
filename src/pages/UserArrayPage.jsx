@@ -29,7 +29,7 @@ const UserArrayPage = () => {
     nextId.current += 1
   }
 
-  //prettier-ignore
+  // prettier-ignore
   return (
   <div className="text-center mt-5">
     <CreateUser></CreateUser>

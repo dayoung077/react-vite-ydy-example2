@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-// Dom 객체를 받아 올 때
+// Dom 객체를 받아올 때
 // useRef로 특정 Dom 선택하기
 // getElementById, querySelector 같은 DOM Selector 함수를 사용해서 Dom을 선택한다.
 // 프로젝트에서도 가끔씩 Dom을 직접 선택해야 하는 상황이 발생
