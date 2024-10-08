@@ -10,6 +10,7 @@ import GradePage from '../pages/GradePage'
 import UseRefPage from '../pages/UseRefPage'
 import UseRefPage2 from '../pages/UseRefPage2'
 import UserArrayPage from '../pages/UserArrayPage'
+import UserCrudPage from '../pages/UserCRUDPage'
 
 // React Routes, Route 사용 시 배열로 관리하기
 const routes = [
@@ -36,17 +37,17 @@ const routes = [
   {
     path: '/three',
     element: <ThreePage />,
-    title: '조건부랜더링',
+    title: '조건부 랜더링',
   },
   {
     path: '/usestate',
     element: <CounterPage />,
-    title: 'useState연습',
+    title: 'useState 연습',
   },
   {
     path: '/input',
     element: <InputPage />,
-    title: 'input연습',
+    title: 'input 연습',
   },
   {
     path: '/grade',
@@ -67,7 +68,8 @@ const routes = [
 
   {
     path: '/userpage',
-    element: <UserArrayPage />,
+    // element: <UserArrayPage />,
+    element: <UserCrudPage />,
     title: '유저 페이지',
   },
 ]
