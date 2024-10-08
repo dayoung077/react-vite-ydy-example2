@@ -1,5 +1,6 @@
-import React from 'react'
-import CreaetUser from './../components/CreateUser'
+import React, { useRef } from 'react'
+import CreateUser from '../components/CreateUser'
+import UserList from '../components/UserList'
 
 const UserArrayPage = () => {
   const users = [
@@ -20,7 +21,7 @@ const UserArrayPage = () => {
     },
   ]
 
-  const nextId = userRef(users.lengh + 1)
+  const nextId = useRef(users.length + 1)
 
   const onCreate = () => {
     // 배열에 항목을 추가하는 로직
@@ -28,12 +29,13 @@ const UserArrayPage = () => {
     nextId.current += 1
   }
 
-  // prettier - ignore
+  //prettier-ignore
   return (
-    <div>
-      <CreaetUser></CreaetUser>
-    </div>
-  )
+  <div className="text-center mt-5">
+    <CreateUser></CreateUser>
+    <UserList users={users}></UserList>
+  </div>
+  );
 }
 
 export default UserArrayPage

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreateUser = (username, email, onChange, onCreate) => {
+const CreateUser = ({ username, email, onChange, onCreate }) => {
   return (
     <div>
       <input
@@ -21,4 +21,4 @@ const CreateUser = (username, email, onChange, onCreate) => {
   )
 }
 
-export default CreaetUser
+export default CreateUser
