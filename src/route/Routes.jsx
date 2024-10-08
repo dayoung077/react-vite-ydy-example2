@@ -63,6 +63,12 @@ const routes = [
     element: <UseRefPage2 />,
     title: 'useRef 예제 2번',
   },
+
+  {
+    path: '/userpage',
+    element: <UseArrayPage2 />,
+    title: '유저 페이지',
+  },
 ]
 
 export default routes
