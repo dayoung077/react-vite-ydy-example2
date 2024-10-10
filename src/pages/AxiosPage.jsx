@@ -1,4 +1,5 @@
 import React from 'react'
+import AxiosGet from './../components/AxiosGet'
 
 const AxiosPage = () => {
   return (
